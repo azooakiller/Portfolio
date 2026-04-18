@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhav Sharma — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       CURSOR FOLLOWER (decorative dot that follows mouse)
+  ============================================================ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MS<span class="logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+      <!-- Mobile hamburger -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile dropdown -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about"    class="nav-mobile-link" onclick="closeMobileNav()">About</a>
+      <a href="#projects" class="nav-mobile-link" onclick="closeMobileNav()">Projects</a>
+      <a href="#skills"   class="nav-mobile-link" onclick="closeMobileNav()">Skills</a>
+      <a href="#contact"  class="nav-mobile-link" onclick="closeMobileNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Decorative grid lines -->
+    <div class="grid-lines" aria-hidden="true">
+      <div class="gl gl-1"></div>
+      <div class="gl gl-2"></div>
+      <div class="gl gl-3"></div>
+    </div>
+
+    <!-- Floating label tags -->
+    <span class="hero-tag hero-tag-1">Front end Developer</span>
+    <span class="hero-tag hero-tag-2">Open to Work</span>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Portfolio — 2026</p>
+
+      <h1 class="hero-title">
+        <span class="hero-line hero-line-1">Madhav</span>
+        <span class="hero-line hero-line-2">
+          <em>Sharma</em>
+          <span class="hero-accent-box" aria-hidden="true"></span>
+        </span>
+      </h1>
+
+      <p class="hero-sub">
+        I build things for the web — fast, accessible,<br />
+        and obsessively well-crafted.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact"  class="btn-ghost">Get In Touch ↓</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TICKER / MARQUEE
+  ============================================================ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>React</span><span class="sep">✦</span>
+      <span>JavaScript</span><span class="sep">✦</span>
+      <span>TypeScript</span><span class="sep">✦</span>
+      <span>PostgreSQL</span><span class="sep">✦</span>
+      <span>Next.js</span><span class="sep">✦</span>
+      <span>Docker</span><span class="sep">✦</span>
+      <span>AWS</span><span class="sep">✦</span>
+      <span>GraphQL</span><span class="sep">✦</span>
+      <span>Figma</span><span class="sep">✦</span>
+      <span>Git</span><span class="sep">✦</span>
+      <span>Salesforce</span><span class="sep">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span>React</span><span class="sep">✦</span>
+      <span>JavaScript</span><span class="sep">✦</span>
+      <span>TypeScript</span><span class="sep">✦</span>
+      <span>PostgreSQL</span><span class="sep">✦</span>
+      <span>Next.js</span><span class="sep">✦</span>
+      <span>Docker</span><span class="sep">✦</span>
+      <span>AWS</span><span class="sep">✦</span>
+      <span>GraphQL</span><span class="sep">✦</span>
+      <span>Figma</span><span class="sep">✦</span>
+      <span>Git</span><span class="sep">✦</span>
+      <span>Salesforce</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="about-grid">
+      <!-- Left: big quote -->
+      <div class="about-quote-col">
+        <blockquote class="about-quote">
+          "Code is craft. I treat every project like it matters — because it does."
+        </blockquote>
+        <!-- Decorative image placeholder -->
+        <div class="about-img-frame">
+          <div class="about-img-inner">
+            <div class="about-img-initials">MS</div>
+          </div>
+          <div class="about-img-border"></div>
+          <span class="about-img-caption">Jaipur, India — 2026</span>
+        </div>
+      </div>
+
+      <!-- Right: bio text + stats -->
+      <div class="about-text-col">
+        <p class="about-bio">
+          Hi, I'm Madhav — a full-stack developer building products 
+          that users love. I specialise in React and Node.js,
+          with a strong eye for design and performance.
+        </p>
+        <p class="about-bio">
+          I've shipped production apps used by thousands of people, contributed
+          to open-source projects, and mentored junior developers. When I'm not
+          coding, I'm reading about typography and writing about the web.
+        </p>
+
+        <!-- Stats row -->
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Projects Shipped</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100+</span>
+            <span class="stat-label">GitHub Commits</span>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn-primary">Work With Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section class="projects" id="projects">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <!-- Featured project (large card) -->
+    <div class="project-featured">
+      <div class="project-featured-info">
+        <div class="project-meta">
+          <span class="project-tag">Featured</span>
+          <span class="project-year">2026</span>
+        </div>
+        <h3 class="project-featured-title">Nexus Chat</h3>
+        <p class="project-desc">
+          A real-time team messaging platform built with WebSockets, React and
+          Node.js. Supports channels, direct messages, file uploads and
+          end-to-end encryption. Handles 10k+ concurrent users.
+        </p>
+        <div class="project-tech">
+          <span>React</span><span>Node.js</span><span>WebSockets</span><span>PostgreSQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="btn-primary btn-sm">Live Demo ↗</a>
+          <a href="#" class="btn-ghost btn-sm">GitHub →</a>
+        </div>
+      </div>
+      <div class="project-featured-visual">
+        <div class="pv-frame">
+          <div class="pv-bar">
+            <span class="pv-dot pv-red"></span>
+            <span class="pv-dot pv-amber"></span>
+            <span class="pv-dot pv-green"></span>
+            <span class="pv-url">nexus.chat</span>
+          </div>
+          <div class="pv-screen">
+            <div class="pv-sidebar">
+              <div class="pv-ch active"># general</div>
+              <div class="pv-ch"># engineering</div>
+              <div class="pv-ch"># design</div>
+            </div>
+            <div class="pv-chat">
+              <div class="pv-msg pv-msg-in"><div class="pv-bubble">Hey team 👋</div></div>
+              <div class="pv-msg pv-msg-out"><div class="pv-bubble">Hello! Ready?</div></div>
+              <div class="pv-msg pv-msg-in"><div class="pv-bubble">Always 🚀</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project grid (smaller cards) -->
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="pc-top">
+          <span class="pc-icon">🛒</span>
+          <div class="pc-links">
+            <a href="#" aria-label="GitHub">⌥</a>
+            <a href="#" aria-label="Live">↗</a>
+          </div>
+        </div>
+        <h3 class="pc-title">ShopFlow</h3>
+        <p class="pc-desc">E-commerce platform with cart, Stripe payments, and real-time inventory management. Built with Next.js and a headless CMS.</p>
+        <div class="pc-tech">
+          <span>Next.js</span><span>Stripe</span><span>Sanity</span>
+        </div>
+        <div class="pc-num">02</div>
+      </article>
+
+      <article class="project-card">
+        <div class="pc-top">
+          <span class="pc-icon">📊</span>
+          <div class="pc-links">
+            <a href="#" aria-label="GitHub">⌥</a>
+            <a href="#" aria-label="Live">↗</a>
+          </div>
+        </div>
+        <h3 class="pc-title">DataPulse</h3>
+        <p class="pc-desc">Analytics dashboard with live charts, custom date filters, and exportable CSV reports. Built for a fintech startup serving 5k users.</p>
+        <div class="pc-tech">
+          <span>React</span><span>D3.js</span><span>Express</span>
+        </div>
+        <div class="pc-num">03</div>
+      </article>
+
+      <article class="project-card">
+        <div class="pc-top">
+          <span class="pc-icon">🤖</span>
+          <div class="pc-links">
+            <a href="#" aria-label="GitHub">⌥</a>
+            <a href="#" aria-label="Live">↗</a>
+          </div>
+        </div>
+        <h3 class="pc-title">AskDocs AI</h3>
+        <p class="pc-desc">Upload any PDF and chat with it using AI. Built with the Claude API, vector embeddings, and a custom chunking pipeline.</p>
+        <div class="pc-tech">
+          <span>Python</span><span>FastAPI</span><span>Pinecone</span>
+        </div>
+        <div class="pc-num">04</div>
+      </article>
+
+      <article class="project-card">
+        <div class="pc-top">
+          <span class="pc-icon">🎵</span>
+          <div class="pc-links">
+            <a href="#" aria-label="GitHub">⌥</a>
+            <a href="#" aria-label="Live">↗</a>
+          </div>
+        </div>
+        <h3 class="pc-title">Wavify</h3>
+        <p class="pc-desc">Music streaming app with playlist management, audio visualizer, and Spotify OAuth. Progressive Web App with offline support.</p>
+        <div class="pc-tech">
+          <span>Vue.js</span><span>Web Audio API</span><span>PWA</span>
+        </div>
+        <div class="pc-num">05</div>
+      </article>
+
+      <article class="project-card">
+        <div class="pc-top">
+          <span class="pc-icon">✅</span>
+          <div class="pc-links">
+            <a href="#" aria-label="GitHub">⌥</a>
+            <a href="#" aria-label="Live">↗</a>
+          </div>
+        </div>
+        <h3 class="pc-title">TaskForge</h3>
+        <p class="pc-desc">Kanban project manager with drag-and-drop, team workspaces, GitHub integrations, and Slack notifications.</p>
+        <div class="pc-tech">
+          <span>React</span><span>Redux</span><span>MongoDB</span>
+        </div>
+        <div class="pc-num">06</div>
+      </article>
+
+      <article class="project-card">
+        <div class="pc-top">
+          <span class="pc-icon">🌐</span>
+          <div class="pc-links">
+            <a href="#" aria-label="GitHub">⌥</a>
+            <a href="#" aria-label="Live">↗</a>
+          </div>
+        </div>
+        <h3 class="pc-title">DevBlog CMS</h3>
+        <p class="pc-desc">Markdown-powered blog engine with syntax highlighting, RSS feeds, image optimization, and a custom admin panel.</p>
+        <div class="pc-tech">
+          <span>Astro</span><span>MDX</span><span>Cloudflare</span>
+        </div>
+        <div class="pc-num">07</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section class="skills" id="skills">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Skills</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3 class="sg-title">Frontend</h3>
+        <ul class="sg-list">
+          <li><span class="sg-name">React / Next.js</span><div class="sg-bar"><div class="sg-fill" style="--w:95%"></div></div></li>
+          <li><span class="sg-name">TypeScript</span><div class="sg-bar"><div class="sg-fill" style="--w:90%"></div></div></li>
+          <li><span class="sg-name">CSS / Tailwind</span><div class="sg-bar"><div class="sg-fill" style="--w:92%"></div></div></li>
+          <li><span class="sg-name">Vue.js</span><div class="sg-bar"><div class="sg-fill" style="--w:75%"></div></div></li>
+          <li><span class="sg-name">Web Animations</span><div class="sg-bar"><div class="sg-fill" style="--w:80%"></div></div></li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="sg-title">Backend</h3>
+        <ul class="sg-list">
+          <li><span class="sg-name">Node.js / Express</span><div class="sg-bar"><div class="sg-fill" style="--w:90%"></div></div></li>
+          <li><span class="sg-name">Python / FastAPI</span><div class="sg-bar"><div class="sg-fill" style="--w:82%"></div></div></li>
+          <li><span class="sg-name">PostgreSQL</span><div class="sg-bar"><div class="sg-fill" style="--w:85%"></div></div></li>
+          <li><span class="sg-name">GraphQL</span><div class="sg-bar"><div class="sg-fill" style="--w:78%"></div></div></li>
+          <li><span class="sg-name">Redis</span><div class="sg-bar"><div class="sg-fill" style="--w:70%"></div></div></li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="sg-title">Salesforce</h3>
+        <ul class="sg-list">
+          <li><span class="sg-name">Salesforce CRM</span><div class="sg-bar"><div class="sg-fill" style="--w:80%"></div></div></li>
+          <li><span class="sg-name">Object Manager</span><div class="sg-bar"><div class="sg-fill" style="--w:75%"></div></div></li>
+          <li><span class="sg-name">Schema Builder</span><div class="sg-bar"><div class="sg-fill" style="--w:88%"></div></div></li>
+          <li><span class="sg-name">App Builder</span><div class="sg-bar"><div class="sg-fill" style="--w:95%"></div></div></li>
+          <li><span class="sg-name">Flow Builder</span><div class="sg-bar"><div class="sg-fill" style="--w:72%"></div></div></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Tools logo row -->
+    <div class="tools-row">
+      <span class="tool-pill">JavaScript</span>
+      <span class="tool-pill">Python</span>
+      <span class="tool-pill">SQL</span>
+      <span class="tool-pill">Salesforce</span>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-rule"></div>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Left: big call to action -->
+      <div class="contact-left">
+        <h3 class="contact-heading">
+          Let's build something<br /><em>great together.</em>
+        </h3>
+        <p class="contact-sub">
+          I'm currently open to new opportunities — freelance projects,
+          full-time roles, or interesting collaborations.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:alex@example.com" class="contact-link">
+            <span class="cl-icon">✉</span>
+            <span>azoobakiller25@gmail.com</span>
+          </a>
+          <a href="https://github.com" target="_blank" class="contact-link">
+            <span class="cl-icon">⌥</span>
+            <span>github.com/azoobakiller</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-link">
+            <span class="cl-icon">in</span>
+            <span>linkedin.com/in/Madhavsharma</span>
+          </a>
+         
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: contact form -->
+      <div class="contact-right">
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submitBtn">
+            Send Message →
+          </button>
+          <p class="form-success" id="formSuccess">
+            ✓ Message sent! I'll be in touch soon.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Madhav Sharma</span>
+      <span class="footer-copy">© 2026 — Designed & Built by Madhav Sharma</span>
+      <a href="#hero" class="footer-back">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
